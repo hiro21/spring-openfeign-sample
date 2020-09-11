@@ -29,6 +29,6 @@ internal class HelloControllerTest {
         every { client.fetch() } returns "mock return"
         mvc.perform(get("/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("test"))
+                .andExpect(content().string("mock return"))
     }
 }

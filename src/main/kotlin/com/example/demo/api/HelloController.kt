@@ -10,8 +10,6 @@ class HelloController(
 ) {
     @GetMapping("/hello")
     fun fetch(): String {
-        val result = client.fetch()
-        println(result)
-        return "test"
+        return client.fetch()
     }
 }
